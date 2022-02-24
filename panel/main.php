@@ -25,9 +25,9 @@
   	<div class="panel fs-6" style="padding:35px;margin:20px;border:1px solid #ddd;">
   		<div class="row ">
   			<div class="col-md-6 ">
-          
+            <h3>Resellers Dashboard</h3>
   				<div class="alert alert-warning" role="alert">
-  					Manage your servers <a href="servers.php">Here</a>
+  					Manage your servers <a href="manage_servers.php">Here</a>
 				  </div>
 
   				<table class="table table-light table-striped table-hover ">

@@ -18,6 +18,9 @@ $sql = "SELECT  * FROM `instant_servers` ";
 if($result = mysqli_query($db, $sql)){
     if(mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_array($result)) {
+          if($row['quantity'] > 0)
+          {
+
             echo "<tr></tr><td>" . $row['id'] . "</td>";
             echo "<td>" . $row['configurations'] . "</td>";
             echo "<td>" . $row['name'] . "</td>";
@@ -25,7 +28,6 @@ if($result = mysqli_query($db, $sql)){
             echo "<td>£" . $row['price'] . "</td>";
             echo "<td>" . $row['quantity'] . "</td>";
             echo "<td><button type='button' class='btn btn-dark' data-bs-toggle='modal' data-bs-target='#a".$row['id']."'>Order</button></td>";
-
             echo '<div class="modal fade" id="a'.$row['id'].'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -33,6 +35,8 @@ if($result = mysqli_query($db, $sql)){
                         <h5 class="modal-title" id="exampleModalLabel">Server Order</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
+
+                      <!-- MODAL -->
                       <div class="modal-body">
                       <span>'.$row['configurations'].'</span><br>
                       <span>' . $row['name'] . '</span><br><br>
@@ -79,8 +83,8 @@ if($result = mysqli_query($db, $sql)){
                     </div>
                   </div>
                 </div></tr>';
-        }
-
+          }
+      }
     }
 }
 

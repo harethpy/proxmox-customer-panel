@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/radio_list.css">
 
     <title>Order - Overlaxed</title>
 
@@ -99,12 +100,14 @@
                     <div class="accordion-body">
                         <div class="row">
                             <div class="col-sm-5">
+
                                 <label for="networkControlSelect" name="networkControlSelect">Port Speed</label>
                                 <select class="form-control" name="networkControlSelect" id="networkControlSelect" onchange="calculatePrice()">
                                     <option value="3|1Gbps" selected>1Gbps $3.00</option>
                                 </select>
                             </div>
                             <div class="col-sm-5">
+
                                 <label for="ipControl">Dedicated IP(s)</label>
                                 <select class="form-control" name="ipControl" id="ipControl">
                                     <option value="1">1 Dedicated IP</option>
@@ -201,8 +204,6 @@
     </form>
 
 
-
-
     <script>
         function calculatePrice(){
 
@@ -247,7 +248,6 @@
         }
         calculatePrice();
     </script>
-
 
 
 

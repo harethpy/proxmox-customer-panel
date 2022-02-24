@@ -57,7 +57,7 @@ echo '
 	        </li>
 	        
 	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="/htdocs/panel/main.php"><i class="fa fa-book" aria-hidden="true"></i> Changelogs</a>
+	          <a class="nav-link" aria-current="page" href="/htdocs/panel/changelog.php"><i class="fa fa-book" aria-hidden="true"></i> Changelogs</a>
 	        </li>
 	        
 	      </ul>
@@ -68,10 +68,11 @@ echo '
       Welcome, <strong>'.$login_session.
       '</strong> <span class="badge bg-danger text-white">
       <a href="/htdocs/logout.php" style="text-decoration:none !important;color:inherit !important;">Logout</a></span>
-     <br>v1.04
+     <br>v1.2
     </span>
    </div>
   </nav>
+  
 
 ';
 
